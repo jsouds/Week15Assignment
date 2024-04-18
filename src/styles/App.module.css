@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+.logo:first-child {
+    padding: 1vw;
+}
+
+.logo * {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    cursor: default;
+}
+
+.cincy {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: stretch;
+}
+
+.cincy img {
+  width: 100%;
+  display: block;
+} 
+
+.cincy h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2vw;
+  z-index: 2;
+  color: orangered;
+  background-color: rgba(20, 20, 20, 90%);
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding: 0 20px;
+  cursor: default;
+} 
+
+.cincy::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    0deg, 
+    rgba(0, 0, 0, 1), /* color at the top (fully opaque white in this case) */
+    transparent 25%, /* begins to become transparent starting from 25% from the top of the element */
+    transparent 75%, /* begins to become opaque at 25% from the bottom of the element*/
+    rgba(0, 0, 0, 1) /* color at the bottom (fully opaque white in this case) */
+    );
+}
+
+body {
+  background-image: linear-gradient(orangered, black)
+}

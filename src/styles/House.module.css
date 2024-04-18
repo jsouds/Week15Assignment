@@ -1,0 +1,81 @@
+.House {
+    width: 50vw;
+    background-color: white;
+    border-radius: 20px;
+    margin: 50px 25px;
+    padding: 5px 25px;
+}
+
+.HouseAndButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.HouseAndButton > * {
+    height: fit-content;
+}
+
+.HouseAndButton > *:not(button) {
+    color: white;
+    background-color: rgb(37, 201, 37);
+    font-size: 1.25vw;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: default;
+}
+
+.HouseAndButton > button {
+    color: white;
+    background-color: orangered;
+    border: solid 2px black;
+    font-size: 0.85vw;
+    border-radius: 20px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.RoomList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    height: 175px;
+    padding: 0;
+    width: stretch;
+}
+
+.RoomList * {
+    margin: 5px 0;
+}
+
+.RoomList > * {
+    height: fit-content;
+}
+
+.RoomList > li {
+    list-style-type: none;
+    margin: 0 25px;
+    height: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 2px black;
+    background-color: skyblue;
+}
+
+.RoomList > li > div {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+}
+
+.RoomList button {
+    background-color: orangered;
+    border: solid 2px black;
+    border-radius: 5px;
+    padding: 5px;
+}
